@@ -7,6 +7,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List; 
 
+
 public class ExpenseTrackerView extends JFrame {
 
   private JTable transactionsTable;
@@ -133,4 +134,8 @@ public class ExpenseTrackerView extends JFrame {
 
 
   // Other view methods
+  //Display error message
+  public void displayError(string message) {
+	  JOptionPane.showMessageDialog(null, 10, message, JOptionPane.ERROR_MESSAGE);
+  }
 }
