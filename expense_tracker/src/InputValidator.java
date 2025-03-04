@@ -1,19 +1,23 @@
 public class InputValidator {
 	public static boolean checkAmountParser(double amount) {
 		try {
-			return amount > 0 && amount < 1000;
+			if(amount > 0 && amount < 1000)
+				return True;
+			else
+				throw new InvalidAmountException("Amount not in range")
 		}catch(Exception e) {
-			return false;
+			throw new InvalidAmountException("Amount must be a valid number.");
+			return False;
 		}
 	}
 	
 	public static boolean checkCategoryParser(String category) {
 		String[] categories = {"food", "travel", "bills", "entertainment", "other"};
-		try {
-			return Arrays.steam(categories).anyMatch(c->c.equalsIgnoreCase(category));
-		}catch(Exception e) {
-			return false;
-		}
+		if (Arrays.stream(categories).anyMatch(c -> c.equalsIgnoreCase(category))) {
+            return true;
+        }
+        throw new InvalidCategoryException("Invalid category inputted, please input a category among: \"food\", \"travel\", \"bills\", \"entertainment\", \"other\".");
+        return False;
 	}
 	
 }
