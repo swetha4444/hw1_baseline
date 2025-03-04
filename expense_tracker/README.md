@@ -40,3 +40,23 @@ Here are some examples of violating ```non-functional``` requirements:
 
 ## Understandibility
 For the understandability section, we will be inspecting your git log. You should include either the .git folder or else a gitLog.(pdf | txt).
+
+## Description
+The Expense Tracker is a java based desktop application that allows users to track their daily expenses. User can add transactions, total them and view them on the table along with the timestamp of when they were created.
+
+## Supported Features
+- **Add Transaction**: User can enter amount and category and click Add Transaction button to add a transaction.
+- **View Transactions**: All transactions are displayed in a table with columns for "amount", "category", "date"
+- **Filter Transactions**: Users can filter transactions by: 
+    - **Category**: Filter transactions by specific category
+    - **Amount Range**: Filter inputted amount within a range (0 to 1000)
+    - **Date Range**: Filter transactions within a given range
+
+## Validators
+The application uses validators and exceptions to ensure that user input is correct and meets specific criteria. Validators are implemented in the InputValidation.java class and are used to validate:
+- **Amount**: Ensures that amount is in range 0 to 1000 else throws InvalidAmountException.
+- **Category**: Ensures that the category belong to one of InvalidCategoryException:
+        ```
+        ["food", "travel", "bills", "entertainment", "other"]
+        ```
+
