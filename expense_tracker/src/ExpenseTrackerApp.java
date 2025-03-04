@@ -27,6 +27,16 @@ public class ExpenseTrackerApp {
       // Get transaction data from view
       double amount = view.getAmountField(); 
       String category = view.getCategoryField();
+      
+      //Adding Input Validators
+      if(!InputValidator.checkAmountParser(amount)) {
+    	  view.showMessage("Invalid amount inputted, please input an amount between 0 to 1000");
+    	  return;
+      }
+      if(!InputValidator.checkCategoryParser(category)) {
+    	  view.showMessage("Invalid category inputted, please input a category among: \"food\", \"travel\", \"bills\", \"entertainment\", \"other\"");
+    	  return;
+      }  
 
       // Create transaction object
       Transaction t = new Transaction(amount, category);
