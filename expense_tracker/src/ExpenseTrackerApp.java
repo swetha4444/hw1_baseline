@@ -29,14 +29,18 @@ public class ExpenseTrackerApp {
       String category = view.getCategoryField();
       
       //Adding Input Validators
-      if(!InputValidator.checkAmountParser(amount)) {
-    	  view.showMessage("Invalid amount inputted, please input an amount between 0 to 1000");
-    	  return;
+      try {
+          InputValidator.checkAmountParser(amount);
+          InputValidator.checkCategoryParser(category);
+      } catch (InvalidAmountException e) {
+          //Display error
+          view.displayError(e.getMessage());
+          return;
+      } catch (InvalidCategoryException e) {
+          //Display
+          view.displayError(e.getMessage());
+          return;
       }
-      if(!InputValidator.checkCategoryParser(category)) {
-    	  view.showMessage("Invalid category inputted, please input a category among: \"food\", \"travel\", \"bills\", \"entertainment\", \"other\"");
-    	  return;
-      }  
 
       // Create transaction object
       Transaction t = new Transaction(amount, category);
