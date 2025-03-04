@@ -135,7 +135,7 @@ public class ExpenseTrackerView extends JFrame {
 
   // Other view methods
   //Display error message
-  public void displayError(string message) {
+  public void displayError(String message) {
 	  JOptionPane.showMessageDialog(null, 10, message, JOptionPane.ERROR_MESSAGE);
   }
 }

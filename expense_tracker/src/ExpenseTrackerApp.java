@@ -32,13 +32,13 @@ public class ExpenseTrackerApp {
       try {
           InputValidator.checkAmountParser(amount);
           InputValidator.checkCategoryParser(category);
-      } catch (InvalidAmountException e) {
+      } catch (InvalidAmountException invalidAmountException) {
           //Display error
-          view.displayError(e.getMessage());
+          view.displayError(invalidAmountException.getMessage());
           return;
-      } catch (InvalidCategoryException e) {
+      } catch (InvalidCategoryException invalidCategoryException) {
           //Display
-          view.displayError(e.getMessage());
+          view.displayError(invalidCategoryException.getMessage());
           return;
       }
 
