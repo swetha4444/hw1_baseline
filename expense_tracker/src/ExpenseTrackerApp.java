@@ -35,10 +35,12 @@ public class ExpenseTrackerApp {
       } catch (InvalidAmountException invalidAmountException) {
           //Display error
           view.displayError(invalidAmountException.getMessage());
+          invalidAmountException.printStackTrace();
           return;
       } catch (InvalidCategoryException invalidCategoryException) {
           //Display
           view.displayError(invalidCategoryException.getMessage());
+          invalidCategoryException.printStackTrace();
           return;
       }
 
