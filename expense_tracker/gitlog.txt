@@ -1,0 +1,22 @@
+* d0e8d4b (HEAD -> feature/hw1, origin/feature/hw1) Update README.md
+* 6a5169f jdoc
+* b624f97 fixes in README
+* b62d8df updated README.md
+* df92122 Final JDoc build
+* 02cbe48 added api comments for jdoc generation
+* 5ee289a read me update
+* 33440c7 comments on InputValidator
+* 1089db1 final jdoc
+* ceb7626 fix exception handling
+* b21c489 fix on jdoc
+* a09d089 fix in showMessageDialog
+* b76d4f1 new jdoc with validators
+* 649c729 Minor error fixes
+* 0e64e9f clearing the project
+* a820d26 handling exceptions and displaying error accodingly
+* 4edf8b0 adding execptions to validators
+* cd3323a adding required exceptions
+* 7979b5f integrrated te validators
+* 3aca672 updated view with error message displayer
+* fb8df9d Added Input Validators
+* 0b8263a adding jdoc
