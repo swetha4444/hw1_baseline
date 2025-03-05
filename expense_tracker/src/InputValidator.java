@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 /**
- * The InputValidator class validates user input.
+ * Provides utility methods for validating user input in the Expense Tracker application.
  */
 public class InputValidator {
 	//Check constants

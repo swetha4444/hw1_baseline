@@ -7,7 +7,10 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List; 
 
-
+/**
+ * Represents the view component of the Expense Tracker application.
+ * This class is responsible for displaying the user interface, including the input form and transaction table.
+ */
 public class ExpenseTrackerView extends JFrame {
 
   private JTable transactionsTable;
