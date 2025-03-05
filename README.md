@@ -8,9 +8,10 @@ The Expense Tracker is a java based desktop application that allows users to tra
 ## Supported Features
 - **Add Transaction**: User can enter amount and category and click Add Transaction button to add a transaction.
 - **View Transactions**: All transactions are displayed in a table with columns for "amount", "category", "timestamp"
+- **Validates Input**: Validates amount input and category when user inputs data.
 
 ## Upcoming Features
 - **Filter Transactions**: Users can filter transactions by: 
     - **Category**: Filter transactions by specific category
     - **Amount Range**: Filter inputted amount within a range (0 to 1000)
-    - **Date Range**: Filter transactions within a given range
+    - **Timestamp Range**: Filter transactions within a given range
